@@ -1,6 +1,7 @@
+DATABASE_URL = "postgres://steve:testpassword@localhost/fastapi6"
 TORTOISE_ORM = {
     "connections": {
-        "master": "postgres://steve:testpassword@localhost/fastapi5",
+        "master": DATABASE_URL,
         # "slave": "postgres://steve:testpassword@localhost/fastapi2"
     },
     "apps": {
@@ -15,7 +16,7 @@ TORTOISE_ORM = {
 }
 TORTOISE_ORM_APP = {
     "connections": {
-        "master": "postgres://steve:testpassword@localhost/fastapi5",
+        "master": DATABASE_URL,
         # "slave": "postgres://steve:testpassword@localhost/fastapi2"
     },
     "apps": {
